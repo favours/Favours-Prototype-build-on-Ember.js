@@ -1,0 +1,60 @@
+
+   
+    <div class="group-items">
+
+      <div class="tables-container col-wide">
+
+        <h1 class="main-heading">Ask a favour. Help someone out. Pay it forward.</h1>
+      
+
+        <div class="btn-group">
+          {{#link-to 'needs-favour' class="btn btn-favour"}}I need a favour!{{/link-to}}
+          {{#link-to 'can-help' class="btn btn-help"}}I can help!{{/link-to}}
+        </div> 
+
+        <section class="outlet">
+
+          {{outlet}}
+
+        </section>      
+
+      </div> <!-- end .tables-container -->
+
+
+      <section class="karma-leaders col-narrow">
+          <h3 class="sub-heading">Karma Leaderboard:</h3>
+
+          <table class="karma-leaders-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Points</th>
+              <th>Member since</th>
+            </tr>
+          </thead>
+                
+          <tbody>
+            {{#each model as |person|}}
+              <tr>
+                <td>{{person.name}}</td>
+                <td class="table-align-center">{{person.points}}</td>
+                <td class="table-align-center">{{person.memberSince}}</td>
+              </tr>
+            {{/each}}  
+          </tbody>
+          </table>     
+      
+      </section> <!-- end .karma-leaders -->
+
+    </div>
+
+
+
+
+    
+
+
+  
+
+    
+

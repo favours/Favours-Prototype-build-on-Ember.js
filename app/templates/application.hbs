@@ -1,3 +1,23 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<div class="site">
+  <div class="nav-container">
+    <nav class="main-nav container"> 
+      {{#link-to 'index' class='logo'}}Favours{{/link-to}}
+      {{#link-to 'how-it-works'}}How It Works{{/link-to}}
+      {{#link-to 'about-us'}}About Us{{/link-to}}
+    </nav>
+  </div>  
 
-{{outlet}}
+  <main class="site-content">
+    <div class="container">
+      {{outlet}}
+    </div>  
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <small>&copy; Favours 2015</small>
+    </div>  
+  </footer>
+</div>  <!-- end .site -->   
+
+
