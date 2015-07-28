@@ -3,8 +3,8 @@ var plan = require('flightplan');
 // configuration
 plan.target('production', [
   {
-    host: 'smoothbeak.com',
-    username: 'daniel.jeffery',
+    host: 's208909.gridserver.com',
+    username: 'smoothbeak.com',
     port: 22,
     agent: process.env.SSH_AUTH_SOCK
   },
